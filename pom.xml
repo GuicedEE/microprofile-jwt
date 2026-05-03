@@ -6,13 +6,13 @@
     <parent>
         <groupId>com.guicedee</groupId>
         <artifactId>parent</artifactId>
-        <version>2.0.1-SNAPSHOT</version>
+        <version>2.0.1</version>
     </parent>
 
     <groupId>com.guicedee.microprofile</groupId>
     <artifactId>jwt</artifactId>
     <packaging>jar</packaging>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.1</version>
 
     <name>GuicedEE MicroProfile JWT</name>
     <description>MicroProfile JWT Auth bridge for GuicedEE — maps MP JWT claims and JsonWebToken to Vert.x JWT Auth</description>
