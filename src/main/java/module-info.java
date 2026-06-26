@@ -17,7 +17,7 @@ module com.guicedee.microprofile.jwt {
     requires transitive microprofile.jwt.auth.api;
     requires transitive jakarta.json;
 
-    opens com.guicedee.microprofile.jwt to com.google.guice, com.guicedee.client, com.guicedee.guicedinjection, com.fasterxml.jackson.databind;
+    opens com.guicedee.microprofile.jwt to com.google.guice, com.guicedee.client, com.guicedee.guicedinjection, tools.jackson.databind;
     opens com.guicedee.microprofile.jwt.implementations to com.google.guice, com.guicedee.client, com.guicedee.guicedinjection;
 
     provides IGuiceModule with MicroProfileJwtModule;
