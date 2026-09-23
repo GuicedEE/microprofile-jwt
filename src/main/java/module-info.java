@@ -3,12 +3,10 @@ import com.guicedee.client.services.lifecycle.IGuicePreStartup;
 import com.guicedee.microprofile.jwt.implementations.*;
 
 module com.guicedee.microprofile.jwt {
-    requires transitive com.guicedee.vertx;
     requires transitive com.guicedee.guicedinjection;
     requires transitive io.vertx.auth.jwt; // optional at runtime — accessed via reflection when present
 
     requires static lombok;
-    requires io.github.classgraph;
 
     exports com.guicedee.microprofile.jwt;
     exports com.guicedee.microprofile.jwt.implementations;
