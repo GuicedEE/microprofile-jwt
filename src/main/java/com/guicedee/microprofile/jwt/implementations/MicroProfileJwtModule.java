@@ -1,5 +1,7 @@
 package com.guicedee.microprofile.jwt.implementations;
 
+import com.guicedee.client.utils.ClassLoading;
+
 import com.google.inject.AbstractModule;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
@@ -59,7 +61,7 @@ public class MicroProfileJwtModule extends AbstractModule implements IGuiceModul
             {
                 if (fieldInfo.hasAnnotation(Claim.class))
                 {
-                    Class<?> aClass = classInfo.loadClass();
+                    Class<?> aClass = ClassLoading.loadClass(classInfo);
                     try
                     {
                         Field declaredField = aClass.getDeclaredField(fieldInfo.getName());
