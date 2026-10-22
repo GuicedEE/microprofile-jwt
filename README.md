@@ -25,7 +25,7 @@ Built on [MicroProfile JWT](https://github.com/eclipse/microprofile-jwt-auth) ·
 <summary>Gradle (Kotlin DSL)</summary>
 
 ```kotlin
-implementation("com.guicedee.microprofile:jwt:2.4.0")
+implementation("com.guicedee.microprofile:jwt:2.4.1")
 ```
 </details>
 
